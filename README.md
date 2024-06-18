@@ -17,7 +17,7 @@ Muduo是一个基于Reactor模型的C++网络库，专为Linux平台设计，用
 <img width="636" alt="LTM框架图" src="https://github.com/ZealACMer/LTMuduo/assets/16794553/232a1cef-0741-448b-bbf7-808606dd2eab">
 
 ## 构建
-本项目提供了一键构建脚本autobuild.sh，可一键进行编译及构建。
+因为本项目摆脱了对boost库的依赖，可使用一键构建脚本autobuild.sh，一键进行编译及构建。
 
 ## 使用实例
 本项目example文件夹下的testserver.cc,提供了编程示例：首先，打开一个terminal，输入命令g++ -o server testserver.cc -lltmuduo -lpthread，然后使用命令./server运行服务器程序。
