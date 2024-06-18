@@ -13,6 +13,13 @@ Muduo是一个基于Reactor模型的C++网络库，专为Linux平台设计，用
 3. 修改了Muduo网络库中影响效率的数据结构，并使用C++11重写多线程相关的编程。
 4. 重写和改进后的LTMuduo网络库，可直接编译成动态库或静态库，无需配置，可直接使用。
 
-框架（流程简介）
+## C++轻量级TCP网络库LTMuduo的框架
+<img width="636" alt="LTM框架图" src="https://github.com/ZealACMer/LTMuduo/assets/16794553/232a1cef-0741-448b-bbf7-808606dd2eab">
 
+## 构建
+本项目提供了一键构建脚本autobuild.sh，可一键进行编译及构建。
+
+## 使用实例
+本项目example文件夹下的testserver.cc,提供了编程示例：首先，打开一个terminal，输入命令g++ -o server testserver.cc -lltmuduo -lpthread，然后使用命令./server运行服务器程序。
+然后打开另一个terminal，输入命令telnet 127.0.0.1 6000，连接服务器程序。观察连接建立和断开时，服务器端的信息输出，随后客户端向服务器端发送回显消息，观察是否正常返回相关信息，测试完成。
 
