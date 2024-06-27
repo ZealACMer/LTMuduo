@@ -1,5 +1,5 @@
 # LTMuduo
-C++轻量级TCP网络库(Lightweighted Tcp Muduo)
+C++轻量级TCP网络库(Lightweighted Tcp Muduo)  「Aliyun CentOS 7.9 64位」
 ## 项目背景
 Muduo是一个基于Reactor模型的C++网络库，专为Linux平台设计，用于支持高性能的网络应用开发，以下是Muduo网络库的一些关键架构优点：
 1. 基本架构：采用Reactor模型，其中包含一个事件循环EventLoop，用于监听I/O事件并调用相应的回调函数进行处理。
@@ -14,7 +14,9 @@ Muduo是一个基于Reactor模型的C++网络库，专为Linux平台设计，用
 4. 重写和改进后的LTMuduo网络库，可直接编译成动态库或静态库，无需配置，可直接使用。
 
 ## C++轻量级TCP网络库LTMuduo的框架
-<img width="636" alt="LTM框架图" src="https://github.com/ZealACMer/LTMuduo/assets/16794553/232a1cef-0741-448b-bbf7-808606dd2eab">
+<div align="middle">
+<img width="636" alt="LTM框架图" src="https://github.com/ZealACMer/LTMuduo/assets/16794553/3cea0319-4bb1-4d63-9c76-bccb97087adf">
+</div>
 
 ## 构建
 因为本项目摆脱了对boost库的依赖，可使用一键构建脚本autobuild.sh，一键进行编译及构建。
