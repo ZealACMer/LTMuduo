@@ -21,10 +21,7 @@ if [ ! -d /usr/include/ltmuduo ]; then
     mkdir /usr/include/ltmuduo
 fi
 
-for header in `ls *.h`
-do
-    cp $header /usr/include/ltmuduo
-done
+cp `pwd`/include/* /usr/include/ltmuduo
 
 cp `pwd`/lib/libltmuduo.so /usr/lib
 
